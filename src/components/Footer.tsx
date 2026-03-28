@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/zakyjibran183/alokpristel.git', label: 'GitHub' },
+    // { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    // { icon: Youtube, href: '#', label: 'YouTube' },
+    // { icon: Instagram, href: '#', label: 'Instagram' },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function Footer() {
           >
             <span>© {currentYear} Made with</span>
             <Heart className="h-4 w-4 text-destructive fill-destructive" />
-            <span>by Developer</span>
+            <span>by Orang Ganteng</span>
           </motion.div>
 
           <motion.div
@@ -36,6 +36,7 @@ export default function Footer() {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
                 className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
                 aria-label={social.label}
               >
